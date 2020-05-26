@@ -1,6 +1,40 @@
 var letterGrapes = document.getElementById("letter-grapes"); 
 var letterPear = document.getElementById("letter-pear");
 var letterWatermelon = document.getElementById("letter-watermelon");
+function change(str) {
+    let letter = document.getElementById("letter-" + str);
+    if(str === "grapes"){
+        letterOrange.style.display = "none";
+    }
+    if(str === "pear"){
+        let letter = document.getElementById("letter-grapes"); 
+        letter.style.display = "none";
+    }
+    if(str === "watermelon"){
+        let letter = document.getElementById("letter-pear"); 
+        letter.style.display = "none";
+    }
+    animalMove[indAn].style.display = "block";
+    micro.style.display = "none"; 
+    setTimeout(function(){
+        letter.style.opacity = "1";
+        letter.style.fontSize = "42px";
+        letter.style.top = "60px";
+        letter.style.left = "200px";
+        letter.style.transition = "all 0.4s";
+        setTimeout(function() {
+            micro.style.display = "block";
+            micro.style.left = "180px";
+            letter.style.top = "60px";
+            letter.style.left = "230px";
+            letter.style.fontSize = "38px";
+        }, 500); 
+    }, 50);
+}
+/*
+var letterGrapes = document.getElementById("letter-grapes"); 
+var letterPear = document.getElementById("letter-pear");
+var letterWatermelon = document.getElementById("letter-watermelon");
 function changeGrapes() {
     letterOrange.style.display = "none";
     animalMove[indAn].style.display = "block";
@@ -58,3 +92,4 @@ function changeWatermelon() {
         }, 500); 
     }, 50);
 }
+*/

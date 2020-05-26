@@ -1,4 +1,4 @@
-// function checkDrag1(){
+ function checkDrag1(){
     expressRaccoon = true;
     animalMove[indAn].style.transition = "none";
     // khi nào mình kéo thả mới bắt đầu kiểm tra vị trí hiện vòng cho đỡ lag
